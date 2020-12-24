@@ -16,16 +16,27 @@ docker --version
 
 
 #安装kubectl
+
 chmod +x linux-amd64-v1.18.12-kubectl
+
 sudo mv ./linux-amd64-v1.18.12-kubectl /usr/local/bin/kubectl
+
 kubectl version
+
 #安装RKE
+
 chmod +x rke_linux-amd64
+
 sudo mv rke_linux-amd64 /usr/local/bin/rke
+
 rke --version
+
 #安装Helm
+
 tar -zxvf helm-v3.4.2-linux-amd64.tar.gz
+
 sudo mv linux-amd64/helm /usr/local/bin/helm
+
 helm version
 
 
