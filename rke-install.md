@@ -1,11 +1,11 @@
 
-#卸载原有docker
-sudo apt-get remove docker docker-engine docker-ce docker.io
-dpkg -l | grep docker
-dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P
-sudo apt-get autoremove docker-ce-*
-sudo rm -rf /etc/systemd/system/docker.service.d
-docker --version
+#卸载原有docker 
+sudo apt-get remove docker docker-engine docker-ce docker.io 
+dpkg -l | grep docker 
+dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P 
+sudo apt-get autoremove docker-ce-* 
+sudo rm -rf /etc/systemd/system/docker.service.d 
+docker --version 
 
 
 
